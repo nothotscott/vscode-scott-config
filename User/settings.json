@@ -1,0 +1,119 @@
+{
+    "workbench.colorTheme": "Laravel Extra - JetBrains Clasic",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-light",
+    "editor.fontWeight": "normal",
+    "editor.inlineSuggest.edits.allowCodeShifting": "always",
+    "codeium.enableCodeLens": false,
+    "editor.insertSpaces": false,
+    "prisma.showPrismaDataPlatformNotification": false,
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "docker-desktop"
+    ],
+    "redhat.telemetry.enabled": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "docker.extension.enableComposeLanguageServer": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "autoimport.doubleQuotes": true,
+    "autoimport.autoComplete": true,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "claudeCode.preferredLocation": "panel",
+    "svelte.enable-ts-plugin": true,
+    // Visual Studio Light colours for C# only; everything else keeps the JetBrains theme.
+    // TextMate rules cover the built-in grammar, semantic rules cover C# Dev Kit / Roslyn.
+    "[csharp]": {
+        "editor.semanticHighlighting.enabled": true
+    },
+    // Markdown opens rendered; right-click the tab → "Reopen Editor With…" → Text Editor to edit
+    "workbench.editorAssociations": {
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "editor.tokenColorCustomizations": {
+        "[Laravel Extra - JetBrains Clasic]": {
+            "textMateRules": [
+                { "scope": ["source.cs", "source.cs variable", "source.cs entity.name.variable", "source.cs punctuation", "source.cs keyword.operator", "source.cs constant.numeric", "source.cs entity.name.type.namespace"], "settings": { "foreground": "#000000", "fontStyle": "" } },
+                { "scope": ["source.cs keyword", "source.cs storage", "source.cs constant.language", "source.cs keyword.operator.expression", "source.cs keyword.type"], "settings": { "foreground": "#0000FF", "fontStyle": "" } },
+                { "scope": ["source.cs keyword.control"], "settings": { "foreground": "#8F08C4", "fontStyle": "" } },
+                { "scope": ["source.cs entity.name.type", "source.cs storage.type.cs"], "settings": { "foreground": "#2B91AF", "fontStyle": "" } },
+                { "scope": ["source.cs entity.name.function"], "settings": { "foreground": "#74531F", "fontStyle": "" } },
+                { "scope": ["source.cs entity.name.variable.parameter", "source.cs entity.name.variable.local"], "settings": { "foreground": "#1F377F", "fontStyle": "" } },
+                { "scope": ["source.cs string", "source.cs punctuation.definition.string"], "settings": { "foreground": "#A31515", "fontStyle": "" } },
+                { "scope": ["source.cs comment", "source.cs punctuation.definition.comment"], "settings": { "foreground": "#008000", "fontStyle": "" } },
+                { "scope": ["source.cs comment.documentation.delimiter", "source.cs comment.documentation.name", "source.cs comment.documentation.attribute.name", "source.cs punctuation.definition.tag"], "settings": { "foreground": "#808080", "fontStyle": "" } },
+                { "scope": ["source.cs meta.preprocessor", "source.cs keyword.preprocessor"], "settings": { "foreground": "#808080", "fontStyle": "" } },
+                // Markdown source: ClaudeLog's light palette (MarkdownPalette.cs), extended
+                { "scope": ["text.html.markdown markup.heading", "text.html.markdown entity.name.section.markdown"], "settings": { "foreground": "#0A7A66", "fontStyle": "bold" } },
+                { "scope": ["text.html.markdown punctuation.definition.heading.markdown"], "settings": { "foreground": "#1B5EA6", "fontStyle": "bold" } },
+                { "scope": ["text.html.markdown markup.bold"], "settings": { "fontStyle": "bold" } },
+                { "scope": ["text.html.markdown markup.italic"], "settings": { "fontStyle": "italic" } },
+                { "scope": ["text.html.markdown markup.bold markup.italic", "text.html.markdown markup.italic markup.bold"], "settings": { "fontStyle": "bold italic" } },
+                { "scope": ["text.html.markdown markup.strikethrough"], "settings": { "foreground": "#808080", "fontStyle": "strikethrough" } },
+                { "scope": ["text.html.markdown punctuation.definition.bold", "text.html.markdown punctuation.definition.italic", "text.html.markdown punctuation.definition.strikethrough", "text.html.markdown punctuation.definition.list.begin.markdown", "text.html.markdown meta.separator.markdown"], "settings": { "foreground": "#1B5EA6", "fontStyle": "bold" } },
+                { "scope": ["text.html.markdown markup.inline.raw", "text.html.markdown markup.raw.block.markdown"], "settings": { "foreground": "#A3311B", "fontStyle": "" } },
+                { "scope": ["text.html.markdown punctuation.definition.markdown", "text.html.markdown fenced_code.block.language", "text.html.markdown punctuation.definition.raw.markdown"], "settings": { "foreground": "#1B5EA6", "fontStyle": "" } },
+                { "scope": ["text.html.markdown markup.quote"], "settings": { "foreground": "#607060", "fontStyle": "italic" } },
+                { "scope": ["text.html.markdown punctuation.definition.quote.begin.markdown"], "settings": { "foreground": "#1B5EA6", "fontStyle": "bold" } },
+                { "scope": ["text.html.markdown string.other.link.title.markdown", "text.html.markdown string.other.link.description.markdown"], "settings": { "foreground": "#1B5EA6", "fontStyle": "" } },
+                { "scope": ["text.html.markdown markup.underline.link"], "settings": { "foreground": "#5A7DB0", "fontStyle": "underline" } },
+                { "scope": ["text.html.markdown punctuation.definition.link", "text.html.markdown punctuation.definition.metadata.markdown"], "settings": { "foreground": "#808080", "fontStyle": "" } }
+            ]
+        }
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "[Laravel Extra - JetBrains Clasic]": {
+            "enabled": true,
+            "rules": {
+                "keyword:csharp": { "foreground": "#0000FF", "fontStyle": "" },
+                "controlKeyword:csharp": { "foreground": "#8F08C4", "fontStyle": "" },
+                "class:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "recordClass:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "struct:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "recordStruct:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "interface:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "enum:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "delegate:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "typeParameter:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "type:csharp": { "foreground": "#2B91AF", "fontStyle": "" },
+                "method:csharp": { "foreground": "#74531F", "fontStyle": "" },
+                "extensionMethod:csharp": { "foreground": "#74531F", "fontStyle": "" },
+                "function:csharp": { "foreground": "#74531F", "fontStyle": "" },
+                "parameter:csharp": { "foreground": "#1F377F", "fontStyle": "" },
+                "local:csharp": { "foreground": "#1F377F", "fontStyle": "" },
+                "variable:csharp": { "foreground": "#1F377F", "fontStyle": "" },
+                "property:csharp": { "foreground": "#000000", "fontStyle": "" },
+                "field:csharp": { "foreground": "#000000", "fontStyle": "" },
+                "event:csharp": { "foreground": "#000000", "fontStyle": "" },
+                "enumMember:csharp": { "foreground": "#000000", "fontStyle": "" },
+                "constant:csharp": { "foreground": "#000000", "fontStyle": "" },
+                "namespace:csharp": { "foreground": "#000000", "fontStyle": "" },
+                "number:csharp": { "foreground": "#000000", "fontStyle": "" },
+                "operator:csharp": { "foreground": "#000000", "fontStyle": "" },
+                "string:csharp": { "foreground": "#A31515", "fontStyle": "" },
+                "stringVerbatim:csharp": { "foreground": "#800000", "fontStyle": "" },
+                "comment:csharp": { "foreground": "#008000", "fontStyle": "" },
+                "excludedCode:csharp": { "foreground": "#808080", "fontStyle": "" },
+                "preprocessorKeyword:csharp": { "foreground": "#808080", "fontStyle": "" }
+            }
+        }
+    }
+}
