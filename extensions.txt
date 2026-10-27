@@ -34,6 +34,7 @@ shardulm94.trailing-spaces
 shd101wyy.markdown-preview-enhanced
 steoates.autoimport
 stringham.move-ts
+sumneko.lua
 svelte.svelte-vscode
 undx.undx-intellij-idea-light-theme
 usernamehw.errorlens

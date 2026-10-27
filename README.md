@@ -43,7 +43,7 @@ icon theme is on Open VSX, so `extensions.txt` covers it.
 
 ## The colour rules
 
-`settings.json` keeps the theme for everything except two languages. VS Code can't set a theme per
+`settings.json` keeps the theme for everything except three languages. VS Code can't set a theme per
 language, so the rules are scoped instead:
 
 - **C#:** `editor.semanticTokenColorCustomizations` rules ending in `:csharp` (with C# Dev Kit) and
@@ -51,5 +51,9 @@ language, so the rules are scoped instead:
   Visual Studio Light's colours.
 - **Markdown source:** TextMate rules under `text.html.markdown`, from ClaudeLog's
   `Views/Editing/MarkdownPalette.cs` (light variant).
+- **Lua:** Notepad++'s Lua colours (`%APPDATA%\Notepad++\stylers.xml`, `LexerType name="lua"`):
+  TextMate rules under `source.lua` (the built-in grammar) and semantic rules ending in `:lua`
+  (from the Lua extension, `sumneko.lua`, which maps its tokens to bare TextMate scopes the
+  `source.lua` rules wouldn't catch). `---` annotations take Notepad++'s COMMENT DOC teal.
 
-Both are nested under `"[Laravel Extra - JetBrains Clasic]"`, so they switch off with any other theme.
+All are nested under `"[Laravel Extra - JetBrains Clasic]"`, so they switch off with any other theme.

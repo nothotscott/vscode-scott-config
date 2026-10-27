@@ -61,6 +61,18 @@
                 { "scope": ["source.cs comment", "source.cs punctuation.definition.comment"], "settings": { "foreground": "#008000", "fontStyle": "" } },
                 { "scope": ["source.cs comment.documentation.delimiter", "source.cs comment.documentation.name", "source.cs comment.documentation.attribute.name", "source.cs punctuation.definition.tag"], "settings": { "foreground": "#808080", "fontStyle": "" } },
                 { "scope": ["source.cs meta.preprocessor", "source.cs keyword.preprocessor"], "settings": { "foreground": "#808080", "fontStyle": "" } },
+                // Lua: Notepad++'s Lua colours (stylers.xml, LexerType "lua"). Identifiers, calls and declarations stay black, as there.
+                { "scope": ["source.lua", "source.lua variable", "source.lua entity", "source.lua support.class", "source.lua support.type", "source.lua support.function.any-method", "source.lua storage.type.generic", "source.lua string.tag", "source.lua meta"], "settings": { "foreground": "#000000", "fontStyle": "" } },
+                { "scope": ["source.lua keyword.control", "source.lua keyword.local", "source.lua keyword.global", "source.lua keyword.operator.logical", "source.lua constant.language"], "settings": { "foreground": "#0000FF", "fontStyle": "bold" } },
+                { "scope": ["source.lua keyword.operator", "source.lua punctuation"], "settings": { "foreground": "#000080", "fontStyle": "bold" } },
+                { "scope": ["source.lua constant.numeric"], "settings": { "foreground": "#FF8000", "fontStyle": "" } },
+                { "scope": ["source.lua string", "source.lua string punctuation", "source.lua string constant.character.escape"], "settings": { "foreground": "#808080", "fontStyle": "" } },
+                { "scope": ["source.lua string.quoted.other.multiline", "source.lua string.quoted.other.multiline punctuation"], "settings": { "foreground": "#95004A", "fontStyle": "" } },
+                { "scope": ["source.lua support.function"], "settings": { "foreground": "#0080C0", "fontStyle": "bold" } },
+                { "scope": ["source.lua support.function.library"], "settings": { "foreground": "#8000FF", "fontStyle": "bold" } },
+                { "scope": ["source.lua comment", "source.lua comment punctuation"], "settings": { "foreground": "#008000", "fontStyle": "" } },
+                // --- annotations (LuaCATS) in Notepad++'s COMMENT DOC colour, so @class/@field lines stand apart from prose comments
+                { "scope": ["source.lua comment.line.double-dash.documentation", "source.lua comment.line.double-dash.documentation punctuation", "source.lua comment storage", "source.lua comment support", "source.lua comment variable", "source.lua comment entity", "source.lua comment string", "source.lua comment keyword", "source.lua comment constant"], "settings": { "foreground": "#008080", "fontStyle": "" } },
                 // Markdown source: ClaudeLog's light palette (MarkdownPalette.cs), extended
                 { "scope": ["text.html.markdown markup.heading", "text.html.markdown entity.name.section.markdown"], "settings": { "foreground": "#0A7A66", "fontStyle": "bold" } },
                 { "scope": ["text.html.markdown punctuation.definition.heading.markdown"], "settings": { "foreground": "#1B5EA6", "fontStyle": "bold" } },
@@ -112,8 +124,33 @@
                 "stringVerbatim:csharp": { "foreground": "#800000", "fontStyle": "" },
                 "comment:csharp": { "foreground": "#008000", "fontStyle": "" },
                 "excludedCode:csharp": { "foreground": "#808080", "fontStyle": "" },
-                "preprocessorKeyword:csharp": { "foreground": "#808080", "fontStyle": "" }
+                "preprocessorKeyword:csharp": { "foreground": "#808080", "fontStyle": "" },
+                // Lua (sumneko.lua's semantic tokens): the same Notepad++ colours as the TextMate rules above
+                "keyword:lua": { "foreground": "#0000FF", "fontStyle": "bold" },
+                "operator:lua": { "foreground": "#000080", "fontStyle": "bold" },
+                "number:lua": { "foreground": "#FF8000", "fontStyle": "" },
+                "string:lua": { "foreground": "#808080", "fontStyle": "" },
+                "comment:lua": { "foreground": "#008000", "fontStyle": "" },
+                "comment.documentation:lua": { "foreground": "#008080", "fontStyle": "" },
+                "keyword.documentation:lua": { "foreground": "#008080", "fontStyle": "" },
+                "function.defaultLibrary:lua": { "foreground": "#0080C0", "fontStyle": "bold" },
+                "variable:lua": { "foreground": "#000000", "fontStyle": "" },
+                "variable.defaultLibrary:lua": { "foreground": "#000000", "fontStyle": "" },
+                "parameter:lua": { "foreground": "#000000", "fontStyle": "" },
+                "property:lua": { "foreground": "#000000", "fontStyle": "" },
+                "function:lua": { "foreground": "#000000", "fontStyle": "" },
+                "method:lua": { "foreground": "#000000", "fontStyle": "" },
+                "class:lua": { "foreground": "#000000", "fontStyle": "" },
+                "type:lua": { "foreground": "#000000", "fontStyle": "" },
+                "struct:lua": { "foreground": "#000000", "fontStyle": "" },
+                "typeParameter:lua": { "foreground": "#000000", "fontStyle": "" },
+                "macro:lua": { "foreground": "#000000", "fontStyle": "" },
+                "event:lua": { "foreground": "#000000", "fontStyle": "" }
             }
         }
+    },
+    "remote.SSH.remotePlatform": {
+        "brandbully-dev-server.internal": "linux",
+        "bb-dev": "linux"
     }
 }
